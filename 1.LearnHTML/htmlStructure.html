@@ -1,0 +1,49 @@
+<!--
+PENGANTAR HTML
+Struktur HTML
+HTML diatur sebagai kumpulan hubungan silsilah keluarga.
+Seperti yang Anda lihat pada latihan terakhir,
+kami menempatkan <p>tag di dalam <body>tag.
+Ketika suatu elemen terkandung di dalam elemen lain,
+itu dianggap sebagai anak dari elemen itu.
+Elemen anak dikatakan bersarang di dalam elemen induk .
+
+<body>
+  <p> Paragraf ini adalah anak dari body </p>
+</body>
+
+Pada contoh di atas, <p>elemen bersarang di dalam <body>elemen.
+<p> elemen dianggap sebagai anak dari <body>elemen,
+dan <body>elemen dianggap orang tua.
+Anda juga dapat melihat bahwa kami telah menambahkan
+dua spasi indentasi (space) untuk keterbacaan yang lebih baik.
+
+Karena bisa ada beberapa tingkat bersarang,
+analogi ini dapat diperluas ke cucu, cicit, dan seterusnya.
+Hubungan antara unsur-unsur dan leluhurnya dan unsur turunannya dikenal sebagai hierarki .
+
+Mari kita perhatikan contoh yang lebih rumit yang menggunakan beberapa tag baru:
+
+<body>
+  <div>
+    <h1> Sibling p, tetapi juga cucu tubuh </ h1 >
+    <p> Sibling ke h1, tetapi juga cucu tubuh </ p >
+  </div>
+</body>
+Dalam contoh ini, <body>elemen adalah induk dari <div>elemen.
+Baik elemen <h1>maupun <p>elemen adalah anak-anak <div>elemen.
+Karena <h1>dan <p>elemen-elemennya berada pada level yang sama,
+mereka dianggap bersaudara dan sama-sama cucu dari <body>elemen tersebut.
+
+Memahami hierarki HTML adalah penting karena elemen anak dapat
+mewarisi perilaku dan gaya dari elemen induknya. Anda akan
+belajar lebih banyak tentang hierarki halaman web ketika
+Anda mulai menggali ke dalam CSS.
+-->
+<body>
+  <h1>Hello World</h1>
+
+  <div>
+<p>This paragraph is a child of the div element and a grandchild of the body element</p>
+  </div>
+</body>
